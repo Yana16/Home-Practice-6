@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Home-Practice-6/static/css/main.f55b4a60.css",
+    "main.js": "/Home-Practice-6/static/js/main.9693d14a.js",
+    "index.html": "/Home-Practice-6/index.html",
+    "main.f55b4a60.css.map": "/Home-Practice-6/static/css/main.f55b4a60.css.map",
+    "main.9693d14a.js.map": "/Home-Practice-6/static/js/main.9693d14a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f55b4a60.css",
+    "static/js/main.9693d14a.js"
+  ]
+}
