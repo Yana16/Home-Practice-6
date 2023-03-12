@@ -5,8 +5,8 @@ import { statusFilters } from '../../redux/constants';
 import { Task } from '../Task/Task';
 import css from '../TaskList/TaskList.module.css';
 
-const getVisibleTasks = (tasks, statusFilters) => {
-  switch (statusFilters) {
+const getVisibleTasks = (tasks, statusFilter) => {
+  switch (statusFilter) {
     case statusFilters.active:
       return tasks.filter(task => !task.completed);
     case statusFilters.completed:
@@ -18,8 +18,8 @@ const getVisibleTasks = (tasks, statusFilters) => {
 
 export const TaskList = () => {
   const tasks = useSelector(getTasks);
-  const statusFilters = useSelector(getStatusFilters);
-  const visibleTasks = getVisibleTasks(tasks, statusFilters);
+  const statusFilter = useSelector(getStatusFilters);
+  const visibleTasks = getVisibleTasks(tasks, statusFilter);
   return (
     <ul className={css.list}>
       {visibleTasks.map(task => (

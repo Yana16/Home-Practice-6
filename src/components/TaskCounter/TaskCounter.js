@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { getTasks } from 'redux/selector';
+import { getTasks } from '../../redux/selector';
 import css from '../TaskCounter/TaskCounter.module.css';
 
 export const TaskCounter = () => {
